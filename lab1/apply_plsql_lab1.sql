@@ -1,14 +1,14 @@
 -- Call the basic seeding scripts, this scripts TEE their own log
 -- files. That means this script can only start a TEE after they run.
 
-\. /home/student/Data/cit325/oracle/lib/cleanup_oracle.sql
-\. /home/student/Data/cit325/oracle/lib/Oracle12cPLSQLCode/Introduction/create_video_store.sql
+@/home/student/Data/cit325/oracle/lib/cleanup_oracle.sql
+@/home/student/Data/cit325/oracle/lib/Oracle12cPLSQLCode/Introduction/create_video_store.sql
 
 -- Add your lab here:
 -- ----------------------------------------------------------------------
 
 -- Open log file.
-TEE apply_plsql_lab1.log
+SPOOL apply_plsql_lab1.log
 
 -- ----------------------------------------------------------------------
 -- Test Case 1.
@@ -121,4 +121,4 @@ SELECT table_name
 FROM   TABLE(listing);
 
 -- Close log file.
-NOTEE
+SPOOL OFF
