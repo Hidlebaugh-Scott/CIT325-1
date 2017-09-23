@@ -1,5 +1,5 @@
--- Call the basic seeding scripts, this scripts TEE their own log
--- files. That means this script can only start a TEE after they run.
+-- Call the basic seeding scripts, this scripts SPOOL their own log
+-- files. That means this script can only start a SPOOL after they run.
 
 @/home/student/Data/cit325/oracle/lib/cleanup_oracle.sql
 @/home/student/Data/cit325/oracle/lib/Oracle12cPLSQLCode/Introduction/create_video_store.sql
