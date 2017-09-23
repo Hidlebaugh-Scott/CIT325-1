@@ -24,4 +24,6 @@ old 13: lv_raw_input := '&1';
 new 13: lv_raw_input := '';
 Hello World!
 
+PL/SQL procedure successfully completed.
+
 ==========================================
