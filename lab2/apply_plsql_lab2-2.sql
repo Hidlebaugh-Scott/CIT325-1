@@ -1,9 +1,5 @@
 -- Add your lab here:
 -- ----------------------------------------------------------------------
-
--- Open log file.
-
--- ----------------------------------------------------------------------
 -- Lab Instructions.
 /* You need to write an anonymous block PL/SQL program that accepts a single parameter. If there is no parameter, you should print “Hello World!”; if the parameter is 10 characters or less, you should print the parameter instead of “World”; if the parameter is more than 10 characters in length, you should print the first 10 characters of the parameter instead of “World”.
 
@@ -55,5 +51,3 @@ BEGIN
 
 END;
 /
-
--- Close log file.
