@@ -1,0 +1,18 @@
+Log: apply_plsql_lab2-2.txt
+==========================================
+Test Case: String less than 11 characters
+------------------------------------------
+old 11: lv_raw_input := '&1';
+new 11: lv_raw_input := 'Harry';
+Hello Harry!
+
+PL/SQL procedure successfully completed.
+
+==========================================
+Test Case: String more than 10 characters
+------------------------------------------
+old 11: lv_raw_input := '&1';
+new 11: lv_raw_input := 'Rumpelstilskin';
+Hello Rumpelstil!
+
+PL/SQL procedure successfully completed.
