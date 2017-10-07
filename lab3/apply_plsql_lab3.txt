@@ -1,0 +1,24 @@
+Log: apply_plsql_lab3.txt
+==========================================
+Test Case: Only number and string
+------------------------------------------
+Record [38] [catch22] []
+
+PL/SQL procedure successfully completed.
+
+==========================================
+Test Case: Valid number, string and date.
+------------------------------------------
+Record [41] [aerodromes] [13-OCT-07]
+
+PL/SQL procedure successfully completed.
+
+==========================================
+Test Case: Bad DATE string
+------------------------------------------
+Error! ORA-06502: PL/SQL: numeric or value error: character to number conversion
+error
+
+PL/SQL procedure successfully completed.
+
+==========================================
