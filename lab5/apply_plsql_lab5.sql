@@ -17,7 +17,7 @@
 -- ----------------------------------------------------------------------
 
 -- Show the output
-SET SERVEROUTPUT ON;
+SET SERVEROUTPUT ON
 
 -- Begin log file
 SPOOL /home/student/Data/cit325/oracle/lab5/apply_plsql_lab5.txt
