@@ -19,9 +19,6 @@
 -- Show the output
 SET SERVEROUTPUT ON
 
--- Begin log file
-SPOOL /home/student/Data/cit325/oracle/lab5/apply_plsql_lab5.txt
-
 -- Clean up existing code
 @/home/student/Data/cit325/oracle/lib/cleanup_oracle.sql
 @/home/student/Data/cit325/oracle/lib/Oracle12cPLSQLCode/Introduction/create_video_store.sql
@@ -42,6 +39,9 @@ CREATE TABLE rating_agency AS
                 i.item_rating
          ,      i.item_rating_agency
          FROM   item i) il;
+
+-- Begin log file
+SPOOL /home/student/Data/cit325/oracle/lab5/apply_plsql_lab5.txt
 -- After creating the table, you should be able to check it’s contents with the following query:
 SELECT * FROM rating_agency;
 		 
@@ -73,7 +73,7 @@ ORDER BY 2;
 -- See what it prints, compare lab output
 
 -- Drop pre-existing object type.
-DROP TYPE c_ratings;
+-- DROP TYPE c_ratings;
 
 -- Creates object type
 CREATE OR REPLACE
